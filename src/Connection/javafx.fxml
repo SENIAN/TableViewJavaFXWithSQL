@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Connection.CRUD">
+   <children>
+      <TableView fx:id="tblviewFX" prefHeight="231.0" prefWidth="712.0" />
+      <ChoiceBox fx:id="choiceboxFX" layoutX="66.0" layoutY="267.0" onMousePressed="#loadTableIntoView" prefWidth="150.0" />
+      <TabPane layoutX="329.0" layoutY="243.0" prefHeight="240.0" prefWidth="383.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="employeeCRUD" text="Employee CRUD">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="401.0">
+                     <children>
+                        <TextField fx:id="postcode" layoutX="14.0" layoutY="135.0" promptText="Postcode" />
+                        <TextField fx:id="huisnummer" layoutX="14.0" layoutY="110.0" promptText="Huisnummer" />
+                        <TextField fx:id="address" layoutX="14.0" layoutY="85.0" promptText="Address" />
+                        <TextField fx:id="achternaam" layoutX="14.0" layoutY="60.0" promptText="Achternaam" />
+                        <TextField fx:id="naam" layoutX="14.0" layoutY="35.0" promptText="Naam" />
+                        <TextField fx:id="stad" layoutX="14.0" layoutY="160.0" promptText="Stad" />
+                        <TextField fx:id="land" layoutX="14.0" layoutY="182.0" promptText="Land" />
+                        <Button fx:id="addingNewEmployee" layoutX="192.0" layoutY="14.0" maxWidth="100" mnemonicParsing="false" onMousePressed="#insertIntoEmployee" text="Add" />
+                        <ChoiceBox fx:id="bsnModify" layoutX="252.0" layoutY="48.0" onMouseClicked="#insertDefaultValue" prefHeight="25.0" prefWidth="122.0" />
+                        <Button fx:id="modifyEmployee" layoutX="192.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#modifyEmployee" text="Modify" />
+                        <Button fx:id="deleteEmployee" layoutX="194.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#deleteEmployee" text="Delete" />
+                        <TextField fx:id="bsn" layoutX="14.0" layoutY="14.0" promptText="Burgerservicenr" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="ProjectCRUD" closable="false" text="Project CRUD">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="186.0" prefWidth="366.0">
+                     <children>
+                        <TextField fx:id="budgetProject" layoutX="125.0" layoutY="72.0" />
+                        <TextField fx:id="hoursProject" layoutX="126.0" layoutY="106.0" />
+                        <TextField fx:id="descProject" layoutX="125.0" layoutY="144.0" />
+                        <Label layoutX="46.0" layoutY="76.0" text="Budget (Euro)" />
+                        <Label layoutX="83.0" layoutY="110.0" text="Hours" />
+                        <Label layoutX="17.0" layoutY="148.0" text="ProjectDescription" />
+                        <Button fx:id="insertIntProject" layoutX="21.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#insertIntProject" prefHeight="25.0" prefWidth="89.0" text="Add" />
+                        <Label layoutX="66.0" layoutY="45.0" text="ProjectID" />
+                        <Button layoutX="125.0" layoutY="175.0" mnemonicParsing="false" text="Modify" />
+                        <Button fx:id="ButtonDeleteEmployee" layoutX="200.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#deleteProject" text="Delete" />
+                        <ChoiceBox fx:id="projectIDbox" layoutX="125.0" layoutY="41.0" onMouseClicked="#insertDefaultValue" prefWidth="150.0" />
+                        <ChoiceBox fx:id="bsnModify1" layoutX="125.0" layoutY="8.0" onMouseClicked="#insertDefaultValue" prefHeight="25.0" prefWidth="150.0" />
+                        <Label layoutX="51.0" layoutY="12.0" text="EmployeeID" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <TextArea fx:id="errorBox" layoutX="70.0" layoutY="305.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="141.0" promptText="Error Code" wrapText="true" />
+      <Label layoutX="55.0" layoutY="243.0" text="Selecteer hieronder een tabel" />
+    </children>
+</Pane>
