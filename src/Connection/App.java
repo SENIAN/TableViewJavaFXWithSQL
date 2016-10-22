@@ -25,7 +25,7 @@ import java.sql.*;
 
 import javafx.scene.control.TableColumn.CellDataFeatures;
 /**
- * Created by Mohammed on 10/18/2016.
+ * Created by SENIAN on 10/18/2016.
  *
  * • Add, delete, or modify an employee, including the data about his/her
  address, education, and job position.
