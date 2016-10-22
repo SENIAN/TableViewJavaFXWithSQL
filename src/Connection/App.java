@@ -27,13 +27,6 @@ import javafx.scene.control.TableColumn.CellDataFeatures;
 /**
  * Created by SENIAN on 10/18/2016.
  *
- * • Add, delete, or modify an employee, including the data about his/her
- address, education, and job position.
- • Add, modify, delete a project, including its location.
- • Assign an existing employee to a project.
- • Check what projects cannot pay the rent, that is, the rent is higher than
- 10% of their budget.
- H
  */
 public class App extends Application{
 
