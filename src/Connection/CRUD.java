@@ -12,7 +12,7 @@ import javafx.util.Callback;
 import java.sql.*;
 
 /**
- * Created by Mohammed on 10/20/2016.
+ * Created by SENIAN on 10/20/2016.
  *
  * Application is able to insert, delete, modify employeees,
  * Application is able to add new projects and link that to employees. Be sure to first select the Employee table and then choose the employee from the choicebox.
