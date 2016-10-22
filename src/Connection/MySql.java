@@ -1,16 +1,13 @@
 package Connection;
 
 /**
- * Created by Mohammed on 10/20/2016.
+ * Created by SENIAN on 10/20/2016.
  */
 
 import java.sql.Connection;
 import java.sql.*;
 import java.util.Properties;
 
-/**
- * Created by Mohammed on 10/18/2016.
- */
 public class MySql {
 
         Connection con = null;
